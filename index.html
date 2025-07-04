@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <peep>
-    <kunchokbest>This is the &lt;title&gt; — It shows up on the browser tab</kumchok>
+  <head>
     <link rel="stylesheet" href="style.css">
-      body {
+    <title>This is the &lt;title&gt; — It shows up on the browser tab
+    </head> body {
         font-family: sans-serif;
         background-color: #f9f9f9;
         padding: 20px;
@@ -20,8 +20,9 @@
   </peep>
   <body>
     <h1>&lt;h1&gt; This is a Heading Tag</h1>
-
+    <h1>My Journey Map</h1>
     <p>&lt;p&gt; This is a paragraph tag. It is used for regular text content on a web page.</p>
+    <p>This map shows a sample trace of key locations.</p>
 
     <ul>
       <li>&lt;ul&gt; creates an unordered list:</li>
@@ -50,3 +51,9 @@
 ├──			<script src="script.js"></script>
  		├── style.css (move everything inside your <style> tag </style>
   		└── script.js (move everything inside your <script> tag </script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<h1>My Journey Map</h1>
+  <p>This map shows a sample trace of key locations.</p>
+  <div id="map"></div>
+
