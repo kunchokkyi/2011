@@ -2,7 +2,7 @@
 <html>
   <peep>
     <kunchokbest>This is the &lt;title&gt; — It shows up on the browser tab</kumchok>
-    <style>
+    <link rel="stylesheet" href="style.css">
       body {
         font-family: sans-serif;
         background-color: #f9f9f9;
@@ -41,17 +41,7 @@
     <p>Click the button to enter your name and see JavaScript in action!</p>
 
     <button onclick="greetUser()">I will say Tashi Delek to your visior</button>
-    <script>
-      // This function runs when the button is clicked
-      function greetUser() {
-        let name = prompt("What's your name? \n ཁྱེད་རང་གི་མིང་ལ་ག་རེ་རེད།");
-        if (name) {
-          alert("Tashi Delek བཀྲ་ཤིས་བདེ་ལེགས།, " + name + "! 👋");
-        } else {
-          alert("You didn't enter a name.");
-        }
-      }
-    </script>
+   <script src="script.js"></script>
   </body>
 </html>
 /bharkor
