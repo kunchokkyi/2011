@@ -25,3 +25,4 @@ const map = L.map('map').setView([28.3949, 84.1240], 5);
     L.marker(tracePoints[0]).addTo(map).bindPopup('Lhasa');
     L.marker(tracePoints[1]).addTo(map).bindPopup('Kathmandu');
     L.marker(tracePoints[2]).addTo(map).bindPopup('Dharamshala');
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
