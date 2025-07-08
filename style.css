@@ -3,12 +3,13 @@ body {
         background-color: #f9f9f9;
         padding: 20px;
       }
-      h1 {kunchokbest
-        color: green;
+      h1 {
+        color: #2c3e50;
       }
       code {
-        background: blue;
+        background: #eee;
         padding: 2px 4px;
         border-radius: 4px;
       }
+
  #map { height: 400px; width: 50%; margin-top: 30px; }
