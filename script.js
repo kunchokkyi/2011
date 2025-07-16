@@ -1,4 +1,4 @@
- // This function runs when the button is clicked
+// This function runs when the button is clicked
 /*      function greetUser() {
         let name = prompt("What's your name? \n ཁྱེད་རང་གི་མིང་ལ་ག་རེ་རེད།");
         if (name) {
@@ -8,50 +8,50 @@
         }
       }
       */
-// Initialize the map centered near Yumbhu Lhakhang
-  // Initialize the map centered between Lhoka and Lhasa
+// Initialize the map centered near village
+  // Initialize the map centered between lhasa and MIT
   const map = L.map('map').setView([30.5, 85], 5);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  const yumbhulhagang = [29.2333, 91.7667];
+  const village = [29.1035, 92.5066];
   const lhasa = [29.6578, 91.1175];
-  const dharamsala = [32.2207, 76.3203]; 
+  const MIT = [42.3601, -71.0942]; 
 
 
   const storyPanel = document.getElementById('story-panel');
 
-  // Marker for Yumbhu Lhakhang
-  L.marker(yumbhulhagang).addTo(map)
-    .bindPopup("📍 Lhokha")
+  // Marker for village
+  L.marker(village).addTo(map)
+    .bindPopup("Methok's village")
     .on('click', () => {
       storyPanel.innerHTML = `
-        <h2>📖 Lhokha</h2>
-        <p><strong>Yumbhu Lhakhang</strong> is Tibet’s first palace, said to be built for King Nyatri Tsenpo in the 2nd century BCE. It marks the legendary beginning of Tibetan kingship in the Yarlung Valley. Perched on a hill, it later became a shrine and monastery during the reign of the 5th Dalai Lama.</p>
+        <h2>Methok's village</h2>
+        <p><strong>Methok's village</strong> where she was born and raised.
       `;
     });
 
   // Marker for Lhasa
   L.marker(lhasa).addTo(map)
-    .bindPopup("📍 Lhasa")
+    .bindPopup("Lhasa")
     .on('click', () => {
       storyPanel.innerHTML = `
-        <h2>📖 Lhasa</h2>
-        <p><strong>Lhasa</strong> became the capital of Tibet during the 7th century under King Songtsen Gampo. With the construction of the Potala Palace and Jokhang Temple, it evolved into the center of Tibetan political power and Buddhist life — a place of unification and pilgrimage.</p>
+        <h2>Lhasa</h2>
+        <p><strong>Lhasa</strong> is the capital of tibet.
       `;
     });
-    // Marker for Dharamsala
-      L.marker(dharamsala).addTo(map)
-        .bindPopup("📍 Dharamshala")
+    // Marker for MIT
+      L.marker(MIT).addTo(map)
+        .bindPopup("MIT")
         .on('click', () => {
           storyPanel.innerHTML = `
-            <h2>📖 Dharamshala</h2>
-            <p>After the 1959 uprising in Lhasa, His Holiness the 14th Dalai Lama fled Tibet and found refuge in Dharamsala, India. There, the Tibetan Government-in-Exile was established — not just as a political structure, but as a cultural lifeline. In this Himalayan town, Tibetans rebuilt schools, monasteries, and institutions to preserve their language, religion, and identity. Though far from their homeland, Dharamsala has become the third symbolic capital of Tibet — a place where memory, resilience, and hope continue to thrive. </p>
+            <h2>Massachusetts Institute of Technology</h2>
+            <p>MIT is a world leading private university in Cambridge, Massachusetts, best known for excellence in STEM fields, including computer science.
           `;
         });
-  const path = L.polyline([yumbhulhagang, lhasa, dharamsala], {
+  const path = L.polyline([village, lhasa, MIT], {
     color: 'red',
     weight: 4
   }).addTo(map);
