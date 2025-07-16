@@ -16,11 +16,11 @@ body {
 }
 /* Header Section */
 .site-header {
-  background-color: #FFFFE0;
+  background-color: #800000;
   color: yellow;
   padding: 30px 20px;
   text-align: center;
-  border-bottom: 4px solid #FDFD96;
+  border-bottom: 4px solid #800000;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -144,7 +144,7 @@ img {
   margin: 60px 0;
   background-color: #fff;
   padding: 25px 20px;
-  border-left: 4px solid #FFFFE0;
+  border-left: 4px solid #800000;
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
